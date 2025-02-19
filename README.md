@@ -43,6 +43,16 @@ This project demonstrates an **LSTM-based approach** for classifying tree specie
 │   └── ...
 └── requirements.txt          # Python dependencies
 ```
+## Some notes
+
+When trying to replicate this process, you just need run the GEE code first, extract the time series data into CSV format, clean it, and then run it through the LSTM classifer. 
+
+When you run the GEE code, the files returned are of the format: "LarchCN_256x256_2022_monthly_patch_0_1.csv"
+Running it through my CSV cleaner returns: "LarchCN_256x256_2022_monthly_patch_0_1_cleaned.csv" 
+Store all these files under a folder; these are the patches you want to classify. 
+
+I also have labeled data points (groundtruth). It is of the format "groundtruth_cleaned_final.csv".
+I train the LSTM classifer on this groundtruth initially, then access the .pth checkpoint later to classify the patches I want to classify. 
 
 ## Technical Highlights
 
