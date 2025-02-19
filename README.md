@@ -60,4 +60,9 @@ I train the LSTM classifer on this groundtruth initially, then access the .pth c
 - **Neural Network Architecture:** LSTM with hidden dimension (e.g., 128), 1–2 layers, dropout 0.2, trained via Adam optimizer.
 - **Time-Series Input Shape:** `(batch_size, 12, 20+)` → 12 monthly steps, ~20 spectral features.
 
+## Initial Segmentation Results
+
+![Segmentation Result 1](/Images/segmentation1.png)
+![Segmentation Result 2](/Images/segmentation2.png)
+
 ---
